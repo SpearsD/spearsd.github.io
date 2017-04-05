@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to DustinSpears.com!"
 date:   2017-04-04 15:52:43 -0400
 categories: jekyll update
 ---
