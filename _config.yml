@@ -4,7 +4,7 @@ bio:            'Just a simple Jekyll theme'
 description:    "Welcome to DustinSpears.com! A home for scripts and automation."
 picture:        'assets/img/profile.png'
 locale:         en_US
-url:            dustinspears.com
+url:            www.dustinspears.com
 
 
 # Jekyll
