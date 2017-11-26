@@ -1,0 +1,13 @@
+# Site navigation links
+
+- title: Home
+  url: /
+
+- title: Blogs
+  url: /blog/
+
+- title: BitBucket
+  url: https://bitbucket.org/spearsd/
+
+- title: About
+  url: /about/
