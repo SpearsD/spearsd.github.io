@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Launch Site to multiple PCs using PowerShell – Dustin's Blog</title>
+    <meta name="description" content="Just about everything you’ll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more.">
+    <meta name="keywords" content="markdown, syntax, sample, test, jekyll">
+    <link rel="canonical" href="http://localhost:4000/launch-site-to-multiple-pcs-using-powershell/">
+        <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Launch Site to multiple PCs using PowerShell">
+    <meta name="twitter:description" content="Just about everything you’ll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more.">
+    <meta name="twitter:site" content="@dustinlspears">
+    <meta name="twitter:creator" content="@dustinlspears">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="http://localhost:4000/assets/img/profile.png">
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Launch Site to multiple PCs using PowerShell">
+    <meta property="og:description" content="Just about everything you’ll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more.">
+    <meta property="og:url" content="http://localhost:4000/launch-site-to-multiple-pcs-using-powershell/">
+    <meta property="og:site_name" content="Dustin's Blog">
+    <meta property="og:image" content="http://localhost:4000/assets/img/profile.png">
+
+    
+    
+    <!-- Handheld -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://localhost:4000/assets/img/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/favicon/apple-touch-icon-144x144.png">
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/img/favicon/favicon.png">
+<link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon/favicon.ico">
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Dustin's Blog" href="http://localhost:4000/feed.xml">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/main.css">
+</head>
+
+  <body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        i = 0;
+        $('.menuAc').css({
+          'color': 'rgba(52, 152, 219, 1)'
+        });
+        $('.menuAc').click(function(){
+          $(this).next('.menuMobil').animate({width:'toggle'},350);
+          if (i%2==0) {
+            $('.footer').css({
+              'filter'         : 'blur(5px)'
+            });
+            $('.yazilar').css({
+              'filter'         : 'blur(5px)'
+            });
+            $('.ust').css({
+              'filter'         : 'blur(5px)'
+            });
+            $('ul.menu').css({
+              'animation-duration': '0.1s'
+            });
+            i++;
+          }
+          else {
+            $('.footer').css({
+              'filter'         : 'blur(0px)'
+            });
+            $('.yazilar').css({
+              'filter'         : 'blur(0px)'
+            });
+            $('.ust').css({
+              'filter'         : 'blur(0px)'
+            });
+            i++;
+          }
+
+        });
+      });
+    </script>
+    <div class="menuAc">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="menuMobil">
+          <nav class="nav-home">
+      <ul class="menu">
+            
+				    
+				    <li><a class="link" href="http://localhost:4000/">Home</a></li>
+				
+				    
+				    <li><a class="link" href="http://localhost:4000/blog/">Blogs</a></li>
+				
+				    
+				    <li><a class="link" href="https://bitbucket.org/spearsd/" target="_blank">BitBucket</a></li>
+				
+				    
+				    <li><a class="link" href="http://localhost:4000/about/">About</a></li>
+				
+        </ul>
+    </nav>
+
+    </div>
+    <div class="ust">
+      <div class="ortalaAna">
+        <div class="baslikAna">
+          Dustin's Blog
+        </div>
+
+        <div class="pc">
+              <nav class="nav">
+        <ul class="menuAna">
+            
+				    
+				    <li class="item"><a class="link" href="http://localhost:4000/">Home</a></li>
+				
+				    
+				    <li class="item"><a class="link" href="http://localhost:4000/blog/">Blogs</a></li>
+				
+				    
+				    <li class="item"><a class="link" href="https://bitbucket.org/spearsd/" target="_blank">BitBucket</a></li>
+				
+				    
+				    <li class="item"><a class="link" href="http://localhost:4000/about/">About</a></li>
+				
+        </ul>
+    </nav>
+
+        </div>
+      </div>
+    </div>
+    <div class="ortalaAna">
+      <div class="yazilar">
+        <div class="yazi">
+          <div class="ustr">
+            <h2>Launch Site to multiple PCs using PowerShell</h2>
+            <div class="yazibilgisi">
+              26 Nov 2017
+            </div>
+          </div>
+          <hr>
+          <div class="content">
+            <p>Using a combination of <strong>PsExec</strong> and <strong>PowerShell</strong>, I created a script to launch mutiple browsers on different laptops. This was a short project I did for a computer lab teacher in my children’s elementary school. This script uses pop ups for data entry.</p>
+
+<p><strong>Warning</strong>: The password for an admin account is sent in clear text to acheive this.</p>
+
+<p>The script uses 4 main components to achieve this:</p>
+<ul>
+<li>PsExec, which can be downloaded <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/psexec">here</a>.</li>
+<li>PowerShell</li>
+<li>Text file with list of PCs</li>
+<li>An admin account.</li>
+</ul>
+
+<p>Lets get to the good stuff…</p>
+
+<h2 id="part-1">Part 1:</h2>
+
+<p>First off, lets create a pop up greeting the user :) I called my program Mass Launch.</p>
+
+<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="nv">$wshell</span> <span class="o">=</span> <span class="nb">New-Object</span> -ComObject Wscript.Shell
+<span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"Welcome to Mass Launch! </span><span class="sb">`</span>n<span class="sb">`</span><span class="s2">nBy: Dustin Spears"</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span>
+The next part of the script will ask <span class="k">for </span>the path to the list of PCs. The last parameter <span class="k">for </span>the input obx pre-fills a suggested location. Then, we <span class="k">end </span>with a <span class="k">if </span>statement, requiring a file to be provided.
+
+<span class="nv">$path</span> <span class="o">=</span> <span class="nb">Get-Location</span>
+<span class="o">[</span>System.Reflection.Assembly]::LoadWithPartialName<span class="o">(</span><span class="s1">'Microsoft.VisualBasic'</span><span class="o">)</span> | <span class="nb">Out-Null</span>
+<span class="nv">$file</span> <span class="o">=</span> <span class="o">[</span>Microsoft.VisualBasic.Interaction]::InputBox<span class="o">(</span><span class="s2">"Enter the file with computers:"</span>, <span class="s2">"File Name"</span>, <span class="s2">"</span><span class="nv">$path</span><span class="se">\p</span><span class="s2">cs.txt"</span><span class="o">)</span>
+
+<span class="k">If</span><span class="o">(</span>-Not <span class="nv">$file</span><span class="o">){</span>
+    <span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"No file was entered."</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span>
+    <span class="k">exit</span>
+<span class="o">}</span></code></pre></figure>
+
+<h2 id="part-2">Part 2:</h2>
+
+<p>Next, we will prompt the user for the website to be sent to the PCs. If the user doesn’t provide a website, the script will end with an error message.</p>
+
+<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="o">[</span>System.Reflection.Assembly]::LoadWithPartialName<span class="o">(</span><span class="s1">'Microsoft.VisualBasic'</span><span class="o">)</span> | <span class="nb">Out-Null</span>
+<span class="nv">$site</span> <span class="o">=</span> <span class="o">[</span>Microsoft.VisualBasic.Interaction]::InputBox<span class="o">(</span><span class="s2">"Enter the website:"</span>, <span class="s2">"Website"</span>, <span class="s2">"</span><span class="nv">$site</span><span class="s2">"</span><span class="o">)</span>
+
+<span class="k">If</span><span class="o">(</span>-Not <span class="nv">$site</span><span class="o">){</span>
+    <span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"No site was entered."</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span>
+    <span class="k">exit</span>
+<span class="o">}</span></code></pre></figure>
+
+<h2 id="part-3">Part 3:</h2>
+
+<p>The following part of the script pulls the current domain, and the fills the $pcs array with the computer names. The if statement checks for the pcs to be seperated by 1 space only. The suggested format for the pc text file is as follows: KCSHDB64Z1 KCSG5ZL4Z1 KCS18F54Z1</p>
+
+<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="nv">$domain</span> <span class="o">=</span> <span class="o">(</span><span class="nb">Get-WmiObject </span>Win32_ComputerSystem<span class="o">)</span>.Name
+<span class="nv">$pcs</span> <span class="o">=</span> <span class="nb">Get-Content</span> <span class="nv">$file</span> -Delimiter <span class="s1">' '</span>
+
+<span class="k">If</span> <span class="o">(</span>-Not <span class="nv">$pcs</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nb">Write</span>-<span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"Error! Make sure the computers names in the file are seperated by 1 space only."</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span>
+    <span class="k">exit</span>
+<span class="o">}</span></code></pre></figure>
+
+<h2 id="part-4">Part 4:</h2>
+
+<p>Finally, the list of PCs is iterrated through launching Chrome with the provided site! This part of the script requires the username and password of an administrator account.</p>
+
+<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="k">Try</span><span class="o">{</span>
+    <span class="k">ForEach</span> <span class="o">(</span><span class="nv">$pc</span> <span class="k">In</span> <span class="nv">$pcs</span><span class="o">)</span> <span class="o">{</span>
+	<span class="nv">$pcTrimmed</span> <span class="o">=</span> <span class="nv">$pc</span>.Trim<span class="o">()</span> + <span class="s2">"domain"</span>
+        <span class="nb">Invoke-Expression</span> <span class="s1">'&amp; psexec \\$pcTrimmed -u domain\username -p password -i -d "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "$site"'</span>
+    <span class="o">}</span> 
+<span class="o">}</span>
+<span class="k">Catch</span><span class="o">{</span>
+    <span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"Unexpected error has occured."</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span>
+    <span class="k">exit</span>
+<span class="o">}</span>
+<span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"Thank you for using Mass Launch!."</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span></code></pre></figure>
+
+<p>For those who are just looking for the source code, you may copy from below or download it from my repo. Thanks, and happy scripting!</p>
+
+<p>https://bitbucket.org/snippets/spearsd/Rge8gk/powershell-multi-pc-browser-launcher</p>
+
+<h2 id="entire-code">Entire Code:</h2>
+
+<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="nv">$wshell</span> <span class="o">=</span> <span class="nb">New-Object</span> -ComObject Wscript.Shell
+<span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"Welcome to Mass Launch! </span><span class="sb">`</span>n<span class="sb">`</span><span class="s2">nBy: Dustin Spears"</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span>
+
+<span class="nv">$path</span> <span class="o">=</span> <span class="nb">Get-Location</span>
+<span class="o">[</span>System.Reflection.Assembly]::LoadWithPartialName<span class="o">(</span><span class="s1">'Microsoft.VisualBasic'</span><span class="o">)</span> | <span class="nb">Out-Null</span>
+<span class="nv">$file</span> <span class="o">=</span> <span class="o">[</span>Microsoft.VisualBasic.Interaction]::InputBox<span class="o">(</span><span class="s2">"Enter the file with computers:"</span>, <span class="s2">"File Name"</span>, <span class="s2">"</span><span class="nv">$path</span><span class="se">\p</span><span class="s2">cs.txt"</span><span class="o">)</span>
+
+<span class="k">If</span><span class="o">(</span>-Not <span class="nv">$file</span><span class="o">){</span>
+    <span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"No file was entered."</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span>
+    <span class="k">exit</span>
+<span class="o">}</span>
+
+<span class="o">[</span>System.Reflection.Assembly]::LoadWithPartialName<span class="o">(</span><span class="s1">'Microsoft.VisualBasic'</span><span class="o">)</span> | <span class="nb">Out-Null</span>
+<span class="nv">$site</span> <span class="o">=</span> <span class="o">[</span>Microsoft.VisualBasic.Interaction]::InputBox<span class="o">(</span><span class="s2">"Enter the website:"</span>, <span class="s2">"Website"</span>, <span class="s2">"</span><span class="nv">$site</span><span class="s2">"</span><span class="o">)</span>
+
+<span class="k">If</span><span class="o">(</span>-Not <span class="nv">$site</span><span class="o">){</span>
+    <span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"No site was entered."</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span>
+    <span class="k">exit</span>
+<span class="o">}</span>
+
+<span class="nv">$domain</span> <span class="o">=</span> <span class="o">(</span><span class="nb">Get-WmiObject </span>Win32_ComputerSystem<span class="o">)</span>.Name
+<span class="nv">$pcs</span> <span class="o">=</span> <span class="nb">Get-Content</span> <span class="nv">$file</span> -Delimiter <span class="s1">' '</span>
+
+<span class="k">If</span> <span class="o">(</span>-Not <span class="nv">$pcs</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nb">Write</span>-<span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"Error! Make sure the computers names in the file are seperated by 1 space only."</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span>
+    <span class="k">exit</span>
+<span class="o">}</span>
+
+<span class="k">Try</span><span class="o">{</span>
+    <span class="k">ForEach</span> <span class="o">(</span><span class="nv">$pc</span> <span class="k">In</span> <span class="nv">$pcs</span><span class="o">)</span> <span class="o">{</span>
+	<span class="nv">$pcTrimmed</span> <span class="o">=</span> <span class="nv">$pc</span>.Trim<span class="o">()</span> + <span class="s2">"domain"</span>
+        <span class="nb">Invoke-Expression</span> <span class="s1">'&amp; psexec \\$pcTrimmed -u domain\username -p password -i -d "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "$site"'</span>
+    <span class="o">}</span> 
+<span class="o">}</span>
+<span class="k">Catch</span><span class="o">{</span>
+    <span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"Unexpected error has occured."</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span>
+    <span class="k">exit</span>
+<span class="o">}</span>
+
+<span class="nv">$wshell</span>.Popup<span class="o">(</span><span class="s2">"Thank you for using Mass Launch!."</span>,0,<span class="s2">"Mass Launch"</span><span class="o">)</span></code></pre></figure>
+
+          </div>
+        </div>
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.goup.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $.goup({
+        trigger: 500,
+        bottomOffset: 10,
+        locationOffset: 20,
+        containerRadius: 0,
+        containerColor: '#fff',
+        arrowColor: '#000',
+        goupSpeed: 'normal'
+    });
+});
+</script>
+
+
+        
+  <div id="disqus_thread" class="yazi">  </div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://dustinspears-com.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+  <script id="dsq-count-scr" src="//dustinspears-com.disqus.com/count.js" async></script>
+
+
+      </div>
+    </div>
+        <div class="footer">
+      <div class="ortalaAna">
+        <div class="copy">
+          Dustin's Blog © 2017
+        </div>
+        <div class="sosyal">
+                        <div class="social-links">
+                  
+                  <a href="http://twitter.com/dustinlspears" class="author-social" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a>
+                  <a href="http://facebook.com/dustin.spears.14" class="author-social" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a>
+                  
+                  <a href="http://linkedin.com/in/dustin-spears-33a55a130" class="author-social" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                  
+                  
+                  
+                  <a href="http://github.com/spearsd" class="author-social" target="_blank"><i class="fa fa-2x fa-github"></i></a>
+                  
+                  
+                  
+                  
+                  
+                  <a href="http://steamcommunity.com/id/spearsd" class="author-social" target="_blank"><i class="fa fa-2x fa-steam-square"></i></a>
+                  
+                  
+                  
+                  
+                  
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

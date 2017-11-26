@@ -3,11 +3,11 @@
 - title: Home
   url: /
 
-- title: Blog
+- title: Blogs
   url: /blog/
 
-- title: Projects
-  url: /projects/
+- title: BitBucket
+  url: https://bitbucket.org/spearsd/
 
 - title: About
   url: /about/

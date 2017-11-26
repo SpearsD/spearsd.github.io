@@ -1,10 +1,10 @@
 # Site
-title:          DustinSpears.com
+title:          "Dustin's Blog"
 bio:            'Just a simple Jekyll theme'
-description:    "JBlog is a minimal, one column and blue jekyll theme for your blog."
+description:    "Welcome to DustinSpears.com! A home for scripts and automation."
 picture:        'assets/img/profile.png'
 locale:         en_US
-url:            http://www.dustinspears.com
+url:            www.dustinspears.com
 
 
 # Jekyll
@@ -24,8 +24,8 @@ sass:
 # Social
 # if you don't have any of social below, comment the line.
 #email:
-twitter: username
-facebook: username
+twitter: dustinlspears
+facebook: dustin.spears.14
 #google:
   #plus: #username
   #analytics:
@@ -33,18 +33,18 @@ facebook: username
   #ad-client:
   #ad-slot:
 #bing-verify:
-github: username
+github: spearsd
 stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin: username
+linkedin: dustin-spears-33a55a130
 #xing: username
-instagram: username
-lastfm: username
-tumblr: username
+#instagram: username
+#lastfm: username
+#tumblr: username
 #pinterest: username
 #foursquare: username
-steam: username
+steam: spearsd
 #dribbble: username
-youtube: username
+#youtube: username
 #soundcloud: username
 #weibo: username
 #flickr: username
@@ -57,7 +57,7 @@ youtube: username
 
 
 # Comments
-disqus_shortname: alperenbozkurt-net
+disqus_shortname: dustinspears-com
 
 
 # Gems

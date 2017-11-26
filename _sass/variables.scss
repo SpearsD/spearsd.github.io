@@ -19,9 +19,14 @@ $turko: #1abc9c;
 $purple: #9b59b6;
 $dark-blue: #34495e;
 
-$main-color: $white;
-$background-color: $blue;
-$thrid-color: rgba(52, 152, 219, 0.8);
+//Custom Colors
+$bg: #383838;
+$txt-bg: #ecf0f1;
+$description: $bg;
+
+$main-color: $txt-bg;
+$background-color: $bg;
+$thrid-color: rgba(52, 219, 94, 0.8);
 
 $color_0: #dedecb;
 $color_1: #000;
